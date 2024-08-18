@@ -1,5 +1,5 @@
 import banner7 from '/images/Rectangle 4497.png'
-import picture from '/images/card-img.png'
+
 import { useState, useEffect } from 'react';
 import axios from "axios";
 
@@ -26,7 +26,7 @@ export default function Projects() {
 
             const products: Product[] = response.data;
             setProducts(products);
-            console.log(products);
+            
 
         } catch (error) {
             console.error(`Error fetching data: ${error}`);
@@ -61,7 +61,7 @@ export default function Projects() {
                     {products.map((product) => (
                         <div key={product.id} className='grid grid-cols-2 relative m-12 '>
                             <p className='flex justify-center items-center bg-gray-300 p-8  dark:bg-neutral-900'>{product.description}</p>
-                            <img src={product.image || picture} alt={product.alt || 'Product image'} />
+                            <img src={product.image } alt= 'Product image' />
                             <p className=' bg-transparent text-[14px] p-[2px] backdrop-blur-xl font-medium text-bgreen absolute right-10 top-0'>{product.name}</p>
                         </div>
                     ))}
