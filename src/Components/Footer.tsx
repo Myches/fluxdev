@@ -47,7 +47,7 @@ export default function Footer() {
                 <div className='md:flex md:justify-center md:items-center flex-col space-y-4 text-gray-200'>
                 <p className='font-bold text-[14px] leading-[26px]'>Legal</p>
                     <ul className=' flex flex-col justify-center  text-[14px] leading-[26px] font-normal'>
-                    <li className='flex   items-center space-x-4'><img src={news} alt="T&C Logo"    /><p>Terms abnd Conditions</p></li>
+                    <li className='flex   items-center space-x-4'><img src={news} alt="T&C Logo"    /><p>Terms and Conditions</p></li>
                         <li className='flex  items-center space-x-4'><img src={person} alt="person logo"    /><p>Privacy and Policy</p></li>
                         <li className='flex   items-center space-x-4'><img src={legal} alt="reviews Logo"    /><p>Company Reviews</p></li>  
                     </ul>
