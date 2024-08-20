@@ -215,7 +215,7 @@ export default function Homepage() {
                  </div>
 
                 
-                <div className='lg:grid lg:grid-cols-2 grid grid-cols-1 w-full md:space-x-16 space-x-0 h-full  md:space-y-0 md:p-12 p-4'>
+                <div className='lg:grid lg:grid-cols-2 grid grid-cols-1 w-full md:space-x-16 space-x-0 lg:h-[1000px] h-full md:space-y-0 md:p-12 p-4'>
                     <div className='w-[100%]  '>
                 <p className='md:text-[48px] text-[18px] md:leading-[72px] leading-[31px] font-montserrat font-bold text-darkBlue w-[70%] dark:text-white'>Frequently Asked Questions</p>
                 <Accordion className='space-y-6  my-8 dark:text-darkGray font-inter '>
