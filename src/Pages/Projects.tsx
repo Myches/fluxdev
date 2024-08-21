@@ -62,8 +62,9 @@ export default function Projects() {
                 <div className='grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 gap-4  dark:text-darkGray'>
                     {products.map((product) => (
                         <div key={product.id} className='grid grid-cols-2 relative m-12 '>
-                         <p>  {product.name} </p>
-                           <p>{product.description}</p>
+                        <p className='flex justify-center items-center bg-gray-300 p-8  dark:bg-neutral-900'>{product.description}</p>
+                            <img src={product.image} alt= 'Product image' />
+                            <p className=' bg-transparent text-[14px] p-[2px] backdrop-blur-xl font-medium text-bgreen  lg:right-10 lg:top-0 absolute right-5 top-[10%]'>{product.name}</p> 
                         </div>
                     ))}
                 </div>
