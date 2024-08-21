@@ -13,6 +13,7 @@ interface Product {
     date: string;
     price: number;
     id: number;
+    images: string[];
 }
 
 export default function Projects() {
@@ -26,6 +27,7 @@ export default function Projects() {
 
             const products: Product[] = response.data;
             setProducts(products);
+            console.log(products)
             
 
         } catch (error) {
@@ -59,10 +61,10 @@ export default function Projects() {
                 <p className=' font-bold md:text-[48px] text-[30px] leading-[72px] flex justify-center items-center dark:text-darkGray '>Recent Works</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4  dark:text-darkGray'>
                     {products.map((product) => (
-                        <div key={product.id} className='grid grid-cols-2 lg:relative m-12 '>
+                        <div key={product.id} className='grid grid-cols-2 relative m-12 '>
                             <p className='flex justify-center items-center bg-gray-300 p-8  dark:bg-neutral-900'>{product.description}</p>
-                            <img src={product.image } alt= 'Product image' />
-                            <p className=' bg-transparent text-[14px] p-[2px] backdrop-blur-xl font-medium text-bgreen lg:absolute lg:right-10 lg:top-0'>{product.name}</p>
+                            <img src={product.images[1]} alt= 'Product image' />
+                            <p className=' bg-transparent text-[14px] p-[2px] backdrop-blur-xl font-medium text-bgreen  lg:right-10 lg:top-0 absolute right-5 top-[10%]'>{product.name}</p>
                         </div>
                     ))}
                 </div>
