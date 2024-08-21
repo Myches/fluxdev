@@ -59,11 +59,12 @@ export default function Projects() {
 
             <div className="md:p-8 p-4 md:space-y-12 space-y-6 font-raleway">
                 <p className=' font-bold md:text-[48px] text-[30px] leading-[72px] flex justify-center items-center dark:text-darkGray '>Recent Works</p>
-                <div className=' dark:text-darkGray'>
+                <div className='grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 gap-4  dark:text-darkGray'>
                     {products.map((product) => (
-                        <div key={product.id} className=' '>
-                          <p>{product.name}</p>  
-                          <p>{product.description}</p>  
+                        <div key={product.id} className='grid grid-cols-2 relative m-12 '>
+                        <p className='flex justify-center items-center bg-gray-300 p-8  dark:bg-neutral-900'>{product.description}</p>
+                            <img src={product.image} alt= 'Product image' />
+                            <p className=' bg-transparent text-[14px] p-[2px] backdrop-blur-xl font-medium text-bgreen  lg:right-10 lg:top-0 absolute right-5 top-[10%]'>{product.name}</p> 
                         </div>
                     ))}
                 </div>
