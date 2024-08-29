@@ -30,7 +30,7 @@ export default function Navbar() {
                     <h1 className='text-[24px] leading-[36px] font-semibold text-customBlue' >Fluxdev</h1>
                 </div>
 
-                <ul className='hidden lg:flex space-x-8 text-[24px]  leading-[36px] font-raleway dark:text-darkGray font-medium'>
+                <ul className='hidden lg:flex space-x-8 text-[24px]  leading-[36px] font-raleway dark:text-darkGray font-medium '>
                   <Link to='/'> <li>Home</li>  </Link>  
                  <Link to='/About' >  <li>About us</li></Link>
                   <Link to='/Services'> <li>Services</li></Link> 

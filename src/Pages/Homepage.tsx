@@ -52,15 +52,25 @@ import {
 
 export default function Homepage() {
 
+  const settings1 = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    autoplay: true ,
+    arrows: false,
+    slidesToScroll: 1, }
+
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 7,
         autoplay: true ,
         arrows: false,
         slidesToScroll: 1,
         responsive: [
+         
           {
             breakpoint: 768,
             settings: {
@@ -104,6 +114,14 @@ export default function Homepage() {
         { src: css, alt: 'css logo' },
       ];
 
+      const teams = [
+        { src: image1, alt: 'img', p: 'C.T.O' },
+        { src: image2, alt: 'img', p: 'Chief Frontend Engineer' },
+        { src: image3, alt: 'img', p: 'Lead Engineer' },
+        { src: image4, alt: 'img', p: 'Chief Backend Engineer' },
+   
+        
+      ];
 
 
 
@@ -136,10 +154,12 @@ export default function Homepage() {
           <div key={index}><img src={logo.src} alt={logo.alt} style={logo.style} /></div>
         ))}
       </div>
-      <div className="hidden md:flex md:flex-row md:justify-between md:items-center md:space-x-10 mt-12">
+      <div className="hidden md:block px-6 mt-12">
+      <Slider {...settings}>
         {logos.slice(6).map((logo, index) => (
           <div key={index}><img src={logo.src} alt={logo.alt} style={logo.style} /></div>
         ))}
+        </Slider>
       </div>
       <div className="md:hidden pt-12">
         <Slider {...settings}>
@@ -200,17 +220,29 @@ export default function Homepage() {
                     </div>
                  </div>
 
-                 <div className=' md:my-12 md:pb-8 pb-4 flex flex-col justify-center items-center h-full font-raleway space-y-8'>
+                 <div className=' my-12  md:pb-8 pb-4 flex flex-col justify-center items-center h-full font-raleway '>
                     <p className='text-[48px] leading-[72px] text-darkBlue  font-bold dark:text-white'>Our Team</p>
-                    <p className='text-[16px] leading-[24px] h-full flex justify-center items-center font-medium md:w-[80%] w-full p-4  dark:text-darkGray'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
+                    <p className='text-[18px] leading-[24px] h-full flex justify-center items-center font-medium md:w-[60%] w-full p-4  dark:text-darkGray'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
                      deliver exceptional digital solutions. Here's what sets our team apart:</p>
 
-                     <div className='md:flex-row  flex flex-col md:space-y-0 space-y-8 md:space-x-14 space-x-0 text-deepBlue leading-[36px] font-bold dark:text-darkGray'>
-                        <div><img src={image1}  alt='img'  className='w-[182px] h-[202px] border border-none rounded-xl '/><p className='flex justify-center items-center'>C.T.O </p></div>
-                        <div><img src={image2}  alt='img' className='w-[182px] h-[202px] border border-none rounded-xl '   /><p className='flex justify-center items-center'>Chief Frontend Engineer</p></div>
-                        <div><img src={image3}  alt='img' className='w-[182px] h-[202px] border border-none rounded-xl '   /><p className='flex justify-center items-center'>Lead Engineer</p></div>
-                        <div> <img src={image4}  alt='img'  className='w-[182px] h-[202px] border border-none rounded-xl '  /><p className='flex justify-center items-center' >Chief Backend Engineer</p></div>
-                     </div>
+                     
+                     <div className="w-full mt-6 ">
+  <Slider {...settings1}>
+    {teams.map((team, index) => (
+      <div key={index} className="px-4">
+        <img 
+          src={team.src} 
+          alt={team.alt}  
+          className="mx-auto  h-auto object-cover"
+        />
+        <p className='flex justify-center items-center  text-deepBlue leading-[36px] font-bold dark:text-darkGray'>{team.p}</p>
+      </div>
+    ))}
+  </Slider>
+</div>
+
+
+
 
                  </div>
 
