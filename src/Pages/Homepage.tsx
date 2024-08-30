@@ -195,7 +195,7 @@ export default function Homepage() {
       </div>
 
                  <div className='mt-16 flex flex-col justify-center items-center  h-full'>
-                    <p className='text-[48px] leading-[72px] text-darkBlue font-bold dark:text-white heading-bar'>Our Features</p>
+                    <p className='md:text-[40px] text-[30px] leading-[72px] text-darkBlue font-semibold dark:text-white heading-bar'>Our Features</p>
                     <div className="mt-6 mx-12 md:space-x-8 space-x-0 lg:flex-row  flex flex-col lg:space-y-0 space-y-8 justify-center items-center  " >
                         <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] w-[313px] h-[331px] p-6 dark:bg-neutral-900'>
                             <p className='font-bold leading-[30px] text-deepBlue dark:text-darkGray font-raleway'>Elevate  Your Online Presence</p>
@@ -244,8 +244,8 @@ export default function Homepage() {
                  </div>
 
                  <div className=' my-12  md:pb-8 pb-4 flex flex-col justify-center items-center h-full font-raleway '>
-                    <p className='text-[48px] leading-[72px] text-darkBlue  font-bold dark:text-white heading-bar '>Our Team</p>
-                    <p className='text-[18px] leading-[24px] h-full flex justify-center items-center font-medium md:w-[60%] w-full p-4  dark:text-darkGray'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
+                    <p className=' md:text-[40px] md:leading-[72px] text-[30px] text-darkBlue  font-bold dark:text-white heading-bar '>Our Team</p>
+                    <p className='text-center text-[18px] leading-[24px] h-full flex justify-center items-center font-medium md:w-[60%] w-full p-4  dark:text-darkGray'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
                      deliver exceptional digital solutions. Here's what sets our team apart:</p>
 
                      

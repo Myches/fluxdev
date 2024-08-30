@@ -5,10 +5,50 @@ import image2 from '/images/Frame 184.png'
 import image3 from '/images/Frame 185.png'
 import image4 from '/images/Frame 188.png'
 import CountUp from "react-countup";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function About() {
 
+    const teams = [
+        { src: image1, alt: 'img', p: 'C.T.O' },
+        { src: image2, alt: 'img', p: 'Chief Frontend Engineer' },
+        { src: image3, alt: 'img', p: 'Lead Engineer' },
+        { src: image4, alt: 'img', p: 'Chief Backend Engineer' },
+        { src: image1, alt: 'img', p: 'Lead Designer' },
+        { src: image2, alt: 'img', p: 'DevOps Engineer' },
+        { src: image3, alt: 'img', p: 'Cloud Engineer' },
+      
+        
+      ];
 
+      const settings1 = {
+        dots: false,
+            infinite: true,
+             slidesToShow: 5,
+            autoplay: true,
+            speed: 2000,
+            arrows:false,
+            autoplaySpeed: 2000,
+            cssEase: "linear",
+            slidesToScroll: 1,
+        responsive: [
+             
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      }
 
     return (
 
@@ -57,14 +97,20 @@ export default function About() {
         <p className='text-center text-[14px] md:text-[20px] md:w-2/3 w-full dark:text-darkGray'>
     Our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience to deliver exceptional digital solutions. Here's what sets our team apart:
   </p>
-        <div className='h-full flex justify-center items-center md:flex-row  flex flex-col md:space-y-0 space-y-8 md:space-x-14 space-x-0 text-deepBlue leading-[36px] font-bold'>
-        <div><img src={image1}  alt='img'  className=' border border-none rounded-xl '/><p className='flex justify-center items-center dark:text-darkGray'>C.T.O </p></div>
-                        <div><img src={image2}  alt='img' className='border border-none rounded-xl '   /><p className='flex justify-center items-center dark:text-darkGray'>Chief Frontend Engineer</p></div>
-                        <div><img src={image3}  alt='img' className=' border border-none rounded-xl '   /><p className='flex justify-center items-center dark:text-darkGray'>Lead Engineer</p></div>
-                        <div> <img src={image4}  alt='img'  className=' border  border-none rounded-xl '  /><p className='flex justify-center items-center  dark:text-darkGray' >Chief Backend Engineer</p></div>  
-
-
-        </div>
+  <div className="w-full mt-6 ">
+  <Slider {...settings1}>
+    {teams.map((team, index) => (
+      <div key={index} className="px-4">
+        <img 
+          src={team.src} 
+          alt={team.alt}  
+          className="mx-auto  h-auto object-cover"
+        />
+        <p className='flex justify-center items-center  text-deepBlue leading-[36px] font-bold dark:text-darkGray'>{team.p}</p>
+      </div>
+    ))}
+  </Slider>
+</div>
 
        </div>
            
