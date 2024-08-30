@@ -54,20 +54,40 @@ export default function Homepage() {
 
   const settings1 = {
     dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    autoplay: true ,
-    arrows: false,
-    slidesToScroll: 1, }
+        infinite: true,
+         slidesToShow: 5,
+        autoplay: true,
+        speed: 2000,
+        arrows:false,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        slidesToScroll: 1,
+    responsive: [
+         
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  }
 
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 7,
-        autoplay: true ,
-        arrows: false,
+         slidesToShow: 7,
+        autoplay: true,
+        speed: 2000,
+        arrows:false,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
         slidesToScroll: 1,
         responsive: [
          
@@ -119,7 +139,10 @@ export default function Homepage() {
         { src: image2, alt: 'img', p: 'Chief Frontend Engineer' },
         { src: image3, alt: 'img', p: 'Lead Engineer' },
         { src: image4, alt: 'img', p: 'Chief Backend Engineer' },
-   
+        { src: image1, alt: 'img', p: 'Lead Designer' },
+        { src: image2, alt: 'img', p: 'DevOps Engineer' },
+        { src: image3, alt: 'img', p: 'Cloud Engineer' },
+      
         
       ];
 
@@ -172,7 +195,7 @@ export default function Homepage() {
       </div>
 
                  <div className='mt-16 flex flex-col justify-center items-center  h-full'>
-                    <p className='text-[48px] leading-[72px] text-darkBlue font-bold dark:text-white'>Our Features</p>
+                    <p className='text-[48px] leading-[72px] text-darkBlue font-bold dark:text-white heading-bar'>Our Features</p>
                     <div className="mt-6 mx-12 md:space-x-8 space-x-0 lg:flex-row  flex flex-col lg:space-y-0 space-y-8 justify-center items-center  " >
                         <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] w-[313px] h-[331px] p-6 dark:bg-neutral-900'>
                             <p className='font-bold leading-[30px] text-deepBlue dark:text-darkGray font-raleway'>Elevate  Your Online Presence</p>
@@ -221,7 +244,7 @@ export default function Homepage() {
                  </div>
 
                  <div className=' my-12  md:pb-8 pb-4 flex flex-col justify-center items-center h-full font-raleway '>
-                    <p className='text-[48px] leading-[72px] text-darkBlue  font-bold dark:text-white'>Our Team</p>
+                    <p className='text-[48px] leading-[72px] text-darkBlue  font-bold dark:text-white heading-bar '>Our Team</p>
                     <p className='text-[18px] leading-[24px] h-full flex justify-center items-center font-medium md:w-[60%] w-full p-4  dark:text-darkGray'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
                      deliver exceptional digital solutions. Here's what sets our team apart:</p>
 
@@ -268,7 +291,7 @@ export default function Homepage() {
 </Accordion>
 </div>
 
-<div className='flex flex-col justify-center items-center  md:mx-8   m-12 md:pb-12 pb-6 dark:text-darkGray '>
+<div className='flex flex-col justify-center items-center  md:mx-8   m-12  pb-6 dark:text-darkGray '>
     <div className='mr-auto bg-graybg  shadow-xl border-lg  space-x-4 md:mb-4 mb-8 flex justify-center items-center w-[236px] h-[68px] z-10 dark:bg-neutral-900  border-none rounded-lg'>
      <img src={circle}  alt='circle'    /> <p className='font-raleway font-semibold text-[18px] '>We offer solutions</p>
     </div>
@@ -292,7 +315,7 @@ export default function Homepage() {
 </div>          </div>
                    
 
-<div className='flex flex-col justify-center items-center  md:pt-12  '>
+<div className='flex flex-col justify-center items-center  '>
     <p className='md:text-[24px] md:leading-[36px] text-[14px] leading-[18px] font-semibold font-raleway dark:text-darkGray'>Have You <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Seen</span> our <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Products?</span></p>
     <p className='md:text-[18px] text-[12px] font-normal md:leading-[27px] leading-[10px] font-raleway text-darkBlue dark:text-darkGray '>What are you waiting for  <span> <button className='w-[139px] h-[46px] bg-customBlue font-inter font-medium text-white rounded-lg dark:bg-bYellow'>Get in Touch</button></span> with Us</p>
 </div>

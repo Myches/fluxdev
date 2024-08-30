@@ -59,13 +59,13 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 m-12 gap-12 ">
                 <img src={banner7} alt="banner" />
                 <div className='md:space-y-12 space-y-6 flex flex-col justify-center '>
-                    <p className='text-bYellow font-raleway font-bold text-[24px] leading-[36px] flex justify-center items-center'>Our Projects</p>
+                    <p className='text-bYellow font-raleway font-bold text-[24px] leading-[36px] flex justify-center items-center  '>Our Projects</p>
                     <p className='font-bold font-raleway md:text-[40px] text-[24px] leading-[60px] text-deepBlue dark:text-darkGray'>Embark on a visual journey as you look through our projects</p>
                 </div>
             </div>
 
             <div className="md:p-8 p-4 md:space-y-12 space-y-6 font-raleway">
-                <p className=' font-bold md:text-[48px] text-[30px] leading-[72px] flex justify-center items-center dark:text-darkGray '>Recent Works</p>
+                <p className=' font-bold md:text-[48px] text-[30px] leading-[72px] flex justify-center items-center dark:text-darkGray  '>Recent Works</p>
                 <div className='grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 gap-4  dark:text-darkGray'>
                     {products.map((product) => (
                         <div key={product.id} className='grid grid-cols-2 relative m-12 '>

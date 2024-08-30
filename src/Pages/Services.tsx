@@ -27,7 +27,7 @@ export default function Services() {
 </div>
 
 <div className="flex flex-col justify-center items-center mt-8 space-y-6 font-raleway">
-  <div className='flex space-x-4'>  <p className="md:text-[32px] text-[25px] font-bold dark:text-darkGray ">What we offer </p> <img src={arrow1}  alt='logo' className='w-[31px] h-[31px] mt-2'  /></div>
+  <div className='flex space-x-4'>  <p className="md:text-[32px] text-[25px] font-bold dark:text-darkGray heading-bar">What we offer </p> <img src={arrow1}  alt='logo' className='w-[31px] h-[31px] mt-2'  /></div>
 
 <div className="lg:grid lg:grid-cols-2 grid grid-cols-1 gap-y-12 gap-x-12  m-8 h-full flex justify-center items-center dark:text-darkGray">
     <div className="space-y-4 bg-gray-200 border border-none shadow-xl rounded-lg md:p-12 p-6 md:m-8  md:h-[372px] dark:bg-neutral-900">
