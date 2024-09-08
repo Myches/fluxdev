@@ -1,6 +1,6 @@
 
 
-import brightLogo from '/images/3.png'
+
 import insta from '/images/Frame (1).png'
 import x from '/images/Frame (2).png'
 import news from  '/images/news.png'
@@ -13,11 +13,11 @@ import pricing from  '/images/pricing.png'
 import faq from  '/images/faq.png'  
 import li from  '/images/Frame (3).png'
 import call from  '/images/call.png' 
-
+import sub from  '/images/sub.png' 
 
 export default function Footer() {
 
-
+    const currentYear = new Date().getFullYear();
 
     return (
         <div className='w-full lg:h-[319px]  bg-deepBlue p-8 font-raleway'>
@@ -25,8 +25,8 @@ export default function Footer() {
             <div className="lg:grid lg:grid-cols-4 grid grid-cols-1 gap-[30px]">
                 <div className='flex-col space-y-6  flex justify-center items-center'>
                     <div className='flex space-x-4'>
-                    <img src={brightLogo} alt='brighLogo'  />
-                    <p className='text-[16px]  text-gray-200 leading-[22px]'>Building roducts that meets user needs</p>
+                    <img src={sub} alt='Logo'  />
+                    <p className='text-[16px] pt-4 text-gray-200 leading-[22px]'>Building products that meets user needs</p>
                     </div>
                     <div className='flex space-x-2'>
                     <img src={insta} alt='instagramLogo'  />
@@ -63,7 +63,7 @@ export default function Footer() {
                   
             </div>
             <div className="flex flex-col  md:flex-row md:justify-around md:items-center justify-center items-center text-gray-200 md:text-[16px] text-[13px] font-medium leading-[30px] p-8 pr-12 pt-8 space-x-14">
-                    <p>&copy; 2024 PTS,Copyright and All Rights reserved</p>
+                    <p>&copy; {currentYear} PTS,Copyright and All Rights reserved</p>
                     <p>Terms and Conditions</p>
 
                 </div> 

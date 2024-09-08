@@ -1,7 +1,7 @@
 import banner7 from '/images/Rectangle 4497.png'
 
 import { useState, useEffect } from 'react';
-import axios from "axios";
+
 
 interface Product {
     image: string;
@@ -20,24 +20,27 @@ export default function Projects() {
 
 
     const [products, setProducts] = useState<Product[]>([]);
-
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<Error | null>(null);
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(
-                "https://fluxdevsng.pythonanywhere.com/api/projects"
-            );
+            const response = await fetch("https://fluxdevsng.pythonanywhere.com/api/projects/?format=json");
 
-            const products: Product[] = response.data;
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const products: Product[] = await response.json();
             setProducts(products);
-         
-            console.log(products)
-            
+            console.log(products);
 
         } catch (error) {
             console.error(`Error fetching data: ${error}`);
-            setProducts([]);
-          
+            setError(error as Error);
+            setProducts([]); 
+        } finally {
+            setLoading(false); 
         }
     };
 
@@ -45,11 +48,21 @@ export default function Projects() {
         fetchData();
     }, []);
 
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
+
+
+
     return (
         
 
            
-        <div className="w-full h-full  dark:bg-black">
+        <div className="w-full h-full mt-12 dark:bg-black">
             <div className="" style={{
                 backgroundImage: `url('./images/Rectangle 4496.png')`, height: '256px'
             }}>
@@ -59,7 +72,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 m-12 gap-12 ">
                 <img src={banner7} alt="banner" />
                 <div className='md:space-y-12 space-y-6 flex flex-col justify-center '>
-                    <p className='text-bYellow font-raleway font-bold text-[24px] leading-[36px] flex justify-center items-center  '>Our Projects</p>
+                    <p className='text-bYellow font-raleway font-bold text-[28px] leading-[36px] flex justify-center items-center  '>Our Projects</p>
                     <p className='font-bold font-raleway md:text-[40px] text-[24px] leading-[60px] text-deepBlue dark:text-darkGray'>Embark on a visual journey as you look through our projects</p>
                 </div>
             </div>
@@ -68,9 +81,9 @@ export default function Projects() {
                 <p className=' font-bold md:text-[48px] text-[30px] leading-[72px] flex justify-center items-center dark:text-darkGray  '>Recent Works</p>
                 <div className='grid grid-cols-1 md:grid md:grid-cols-2 md:gap-8 gap-4  dark:text-darkGray'>
                     {products.map((product) => (
-                        <div key={product.id} className='grid grid-cols-2 relative m-12 '>
-                        <p className='flex justify-center items-center bg-gray-300 p-8  dark:bg-neutral-900'>{product.description}</p>
-                            <img src={product.image} alt= 'Product image' />
+                        <div key={product.id} className='grid grid-cols-2 relative m-12 shadow-2xl hover:scale-110 transition ease-in-out'>
+                        <p className='flex justify-center items-center bg-gray-300 text-[24px] p-8 font-bold dark:bg-neutral-900'>{product.description}</p>
+                            <img src={product.image} alt= 'Product image' className='h-[100%]'/>
                             <p className=' bg-transparent text-[14px] p-[2px] backdrop-blur-xl font-medium text-bgreen  lg:right-10 lg:top-0 absolute right-5 top-[10%]'>{product.name}</p> 
                         </div>
                     ))}

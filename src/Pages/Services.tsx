@@ -1,6 +1,6 @@
 import arrow1 from '/images/Frame 39519.png'
 import arrow2 from '/images/Frame 39519 (1).png'
-import banner5 from '/images/Rectangle 4500.png'
+import { Player } from '@lottiefiles/react-lottie-player';
 import banner6 from '/images/Frame 39606.png'
 
 
@@ -12,40 +12,58 @@ export default function Services() {
 
     return (
        
-        <div className="w-full h-full relative  dark:bg-black">
-            <div className=" flex flex-col lg:flex-row lg:p-16 p-8 lg:space-x-12 space-x-0">
-                <p className="md:text-[64px] font-bold md:leading-[73px] font-raleway text-[41px] leading-[42px]  dark:text-darkGray">Request a quote or consultation time <br />
-                    <span className="md:text-[32px] text-[20px] leading-[22px] font-raleway">Get responds between 24hours</span> </p>
-                <div className="flex flex-col space-y-8 mt-6 flex justify-center items-center">
-                    <p className="text-[18px] leading-[24px] font-raleway md:w-[70%] dark:text-darkGray">We are aimed at helping companies across various industries
-                         transform their operations and enhance their digital presence.</p>
-                         <button className='w-[139px] h-[46px]  bg-customBlue text-white rounded-lg font-montserrat'>Request Now</button>     
-                </div> 
-            </div>
-<div className=" mt-8">
-<img src={banner5}  alt='logo' className='w-[100%]'   />
+        <div className="w-full h-full relative  dark:bg-black mt-16">
+               <Player
+        src='https://lottie.host/9094bcd8-f710-4198-8e9f-95db1bd1e680/kEeFP2T1ay.json'
+       className="player block md:hidden "
+        autoplay
+        loop
+       
+      />
+            <div className=' grid grid-cols-1 lg:grid lg:grid-cols-2 font-raleway flex justify-center py-6 space-y-12 md:space-y-0 text-darkBlue ' >
+         
+            <div className='flex flex-col  items-center text-center space-y-6 mx-auto dark:text-darkGray pt-16'>
+  <p className="md:text-[64px] font-bold md:leading-[73px] font-raleway text-[41px] leading-[42px] dark:text-darkGray">
+    Request a quote or consultation time <br />
+    <span className="md:text-[32px] text-[20px] leading-[22px] font-raleway">Get responds between 24hours</span>
+  </p>
+  <p className="text-[18px] leading-[24px] font-raleway md:w-[70%] dark:text-darkGray">
+    We are aimed at helping companies across various industries transform their operations and enhance their digital presence.
+  </p>
+  <button className='w-[139px] h-[46px] bg-customBlue text-white rounded-lg font-montserrat'>Request Now</button>
+</div>
+
+   <div className=''>
+   <Player
+        src=' https://lottie.host/9094bcd8-f710-4198-8e9f-95db1bd1e680/kEeFP2T1ay.json '
+       className="player  hidden md:block  w-[650px] h-[450px] "
+        autoplay
+        loop
+       
+      />
+   </div>
 </div>
 
 <div className="flex flex-col justify-center items-center mt-8 space-y-6 font-raleway">
-  <div className='flex space-x-4'>  <p className="md:text-[32px] text-[25px] font-bold dark:text-darkGray heading-bar">What we offer </p> <img src={arrow1}  alt='logo' className='w-[31px] h-[31px] mt-2'  /></div>
+  <div className='flex space-x-4'>  <p className="md:text-[48px] text-[36px] leading-[72px] font-bold dark:text-darkGray ">What we offer </p> <img src={arrow1}  alt='logo' className='w-[45px] h-[45px] mt-2'  /></div>
 
-<div className="lg:grid lg:grid-cols-2 grid grid-cols-1 gap-y-12 gap-x-12  m-8 h-full flex justify-center items-center dark:text-darkGray">
-    <div className="space-y-4 bg-gray-200 border border-none shadow-xl rounded-lg md:p-12 p-6 md:m-8  md:h-[372px] dark:bg-neutral-900">
+<div className="lg:grid lg:grid-cols-2 grid grid-cols-1 gap-y-6 gap-x-12  m-8 h-full flex justify-center items-center dark:text-darkGray">
+    <div className="space-y-4 bg-gray-200 border border-none shadow-xl rounded-lg md:p-12 p-6 md:m-8  md:h-[330px] dark:bg-neutral-900">
         <p className="text-[20px]">08 Jobs</p>
         <p className="md:text-[38px] text-[27px] font-bold">Branding</p>
         <p className="text-[20px] pt-8">we are aimed at helping companies across various industries transform their operations </p>
         </div>
-        <div className="space-y-4 bg-gray-200 shadow-xl border border-none rounded-lg md:p-12 p-6 md:m-8   md:h-[372px] dark:bg-neutral-900">
+        <div className="space-y-4 bg-gray-200 shadow-xl border border-none rounded-lg md:p-12 p-6 md:m-8   md:h-[330px] dark:bg-neutral-900">
         <p className="text-[20px]">08 Jobs</p>
         <p className="md:text-[38px] text-[27px]  font-bold">Web Dev ...</p>
         <p className="text-[20px] pt-8">we are aimed at helping companies across various industries transform their operations </p>
         </div>
-        <div className="space-y-4 bg-gray-200 shadow-xl border border-none rounded-lg md:p-12 p-6 md:m-8  md:h-[372px]  dark:bg-neutral-900">
+        <div className="space-y-4 bg-gray-200 shadow-xl border border-none rounded-lg md:p-12 p-6 md:m-8  md:h-[330px]  dark:bg-neutral-900">
         <p className="text-[20px]">08 Jobs</p>
         <p className="md:text-[38px] text-[27px]  font-bold">Ui/UX Design</p>
         <p className="text-[20px] pt-8">we are aimed at helping companies across various industries transform their operations </p>
         </div>
-        <div className="space-y-4 bg-gray-200 shadow-xl border border-none rounded-lg md:p-12 p-6 md:m-8  md:h-[372px]  dark:bg-neutral-900">
+        <div className="space-y-4 bg-gray-200 shadow-xl border border-none rounded-lg md:p-12 p-6 md:m-8  md:h-[330px]  dark:bg-neutral-900">
         <p className="text-[20px]">08 Jobs</p>
         <p className="md:text-[38px] text-[27px]  font-bold">SEO</p>
         <p className="text-[20px] pt-8">we are aimed at helping companies across various industries transform their operations </p>
