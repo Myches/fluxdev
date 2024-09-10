@@ -68,7 +68,7 @@ export default function About() {
 
        <div className='flex flex-col justify-center items-center h-full font-raleway p-8 mt-4 '>
         <p className='text-center font-bold md:text-[48px] text-[36px] leading-[72px]  dark:text-darkGray '>Our Team</p>
-        <p className='text-center text-[22px] md:w-2/3 w-full dark:text-darkGray'>
+        <p className='text-center  md:w-2/3 w-full dark:text-darkGray'>
     Our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience to deliver exceptional digital solutions. Here's what sets our team apart:
   </p>
   <div className="w-full grid grid-cols-2 md:grid-cols-1 lg:flex lg:flex-wrap   lg:space-x-6 gap-y-4 mt-6 md:px-8">
