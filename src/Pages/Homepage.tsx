@@ -266,7 +266,7 @@ export default function Homepage() {
       />
                         </div>
 
-                        <div className=' shadow-xl border border-none rounded-lg bg-graybg md:m-14 m-6 flex  flex-col p-12   gap-y-[23px] font-raleway dark:bg-neutral-900'>
+                        <div className=' shadow-xl border border-none rounded-lg bg-graybg md:m-14 m-6 flex  flex-col md:p-12 p-6  gap-y-[23px] font-raleway dark:bg-neutral-900'>
                             <p className='text-bYellow font-raleway leading-[48px] md:text-[32px] text-[25px] font-semibold'>We Work with your</p>
 
                             <div className='flex flex-col gap-y-[22px] md:text-[16px] text-[16px] text-deepBlue font-medium '>
@@ -303,9 +303,9 @@ export default function Homepage() {
                
 
                     <div className='my-12 md:pb-8 pb-4 px-4 md:mx-[100px] mx-0 flex flex-col justify-center items-center md:items-end h-full font-raleway'>
-  <p className='text-[48px] leading-[72px] text-[30px] text-darkBlue font-bold dark:text-white'>Our Team</p>
+  <p className='md:text-[48px] text-[36px] leading-[72px] text-[30px] text-darkBlue font-bold dark:text-white'>Our Team</p>
 
-                    <p className=' text-[18px] leading-[24px] h-full flex   font-medium  w-full p-4  dark:text-darkGray  md:text-right  text-center'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
+                    <p className='   h-full flex   font-medium  w-full p-4  dark:text-darkGray  md:text-right  text-center'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
                      deliver exceptional digital solutions. Here's what sets our team apart:</p>
 
                      
