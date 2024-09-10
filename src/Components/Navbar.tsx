@@ -89,7 +89,7 @@ export default function Navbar() {
                             </button>
                         )}
                     </div> 
-                    <ul className='flex flex-col space-y-5 p-4 text-[16px] leading-[24px] dark:text-darkGray font-normal font-euclid'>
+                    <ul className='flex flex-col space-y-5 p-4 text-[18px] leading-[24px] dark:text-darkGray font-normal font-euclid'>
                         <Link to='/' onClick={toggleMenu}><li>Home</li></Link>
                         <Link to='/About' onClick={toggleMenu}><li>About us</li></Link>
                         <Link to='/Services' onClick={toggleMenu}><li>Services</li></Link>

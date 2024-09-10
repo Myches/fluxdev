@@ -190,7 +190,7 @@ export default function Homepage() {
   </p>
   <div className="mt-6 mx-auto   md:space-x-8 space-x-0 lg:flex-row flex flex-col lg:space-y-0 space-y-8 justify-center items-center ">
     
-   <Fade  direction="up" triggerOnce> <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[40px] w-[350px] md:h-[431px]  p-6 dark:bg-neutral-900'>
+   <Fade  direction="up" triggerOnce> <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[40px] w-[350px] md:h-[431px] w-[295px] h-[380px] p-6 dark:bg-neutral-900'>
       <p className='font-bold leading-[30px] text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Elevate Your Online Presence
       </p>
@@ -211,7 +211,7 @@ export default function Homepage() {
    
     </Fade>
   
-    <Fade direction='up' triggerOnce ><div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] w-[350px] md:h-[431px]   p-6 dark:bg-neutral-900'>
+    <Fade direction='up' triggerOnce ><div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] w-[350px] md:h-[431px] w-[295px] h-[380px]  p-6 dark:bg-neutral-900'>
       <p className='font-semibold leading-[30px] text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Client-focused solutions.
       </p>
@@ -232,7 +232,7 @@ export default function Homepage() {
     </Fade> 
 
     <Fade   direction="up" triggerOnce>
-    <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] w-[350px] md:h-[431px]  p-6 dark:bg-neutral-900'>
+    <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] md:w-[350px] md:h-[431px] w-[300px] h-[380px] p-6 dark:bg-neutral-900'>
       <p className='font-semibold leading-[30px]  text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Transforming Your Digital Experience.
       </p>
@@ -256,10 +256,10 @@ export default function Homepage() {
                     
                     <div className='lg:grid lg:grid-cols-2 grid grid-col-1 md:p-8 p-4 mt-12 flex gap-y-12  justify-center items-center w-full  h-full'>
                         <div className=' flex flex-col items-center '>
-                            <p className='text-[48px]  leading-[72px] dark:text-white font-pacifico '>Start Planning</p>
+                            <p className='md:text-[48px] text-[40px]  leading-[72px] dark:text-white font-pacifico '>Start Planning</p>
                             <Player
         src='  https://lottie.host/ead7980b-13fb-4262-8f2b-adfd42500660/mRnHkH2Wmf.json  '
-        className="player md:w-[500px] md:h-[550px] w-[350px] h-[350px] "
+        className="player md:w-[500px] md:h-[550px] w-[295px] h-[350px] "
         autoplay
         loop
        
@@ -294,7 +294,7 @@ export default function Homepage() {
                            
                             </div>
 
-                            <p className='md:text-[20px] text-[14px] font-raleway font-medium leading-[36px] text-deepBlue pt-6 dark:text-white'>Start your journey with us today to achieve your online goals and stand out in the digital landscape. </p>
+                            <p className='md:text-[22px] text-[18px] font-raleway font-medium leading-[36px] text-deepBlue pt-6 dark:text-white'>Start your journey with us today to achieve your online goals and stand out in the digital landscape. </p>
 
                         </div>
 
@@ -318,7 +318,7 @@ export default function Homepage() {
           alt={team.alt}  
           className="mx-auto  h-auto object-cover"
         />
-        <p className='flex justify-center items-center text-deepBlue md:leading-tight font-semibold dark:text-darkGray text-center'>
+        <p className='flex justify-center items-center text-deepBlue p-2 leading-tight font-semibold dark:text-darkGray text-center'>
     {team.p}
 </p>
 
@@ -356,12 +356,12 @@ export default function Homepage() {
 
 <div className='flex flex-col justify-center items-center relative md:mx-8   m-12  pb-6 dark:text-darkGray font-raleway'>
   
-<div className='relative mr-auto top-[10px] space-x-4 bg-graybg  shadow-xl border-lg  flex justify-center items-center w-[236px] h-[68px] z-10 dark:bg-neutral-900  border-none rounded-lg'>
+<div className='relative mr-auto top-[10px] space-x-4 bg-graybg  shadow-xl border-lg  flex justify-center items-center w-[236px] h-[68px] mx-[5px] z-10 dark:bg-neutral-900  border-none rounded-lg'>
      <img src={circle}  alt='circle'    /> <p className=' font-semibold text-[18px] '>We offer solutions</p>
     </div>
     <div className='p-12  relative   bg-graybg  flex flex-col  shadow-xl  border-none rounded-lg dark:bg-neutral-800 '>
         
-   <p className='font-medium text-[16px] flex justify-center  items-center   md:w-[400px] md:h-[200px] '> Our client-focused solutions include custom web design, innovative web development, 
+   <p className='font-medium text-[16px] flex justify-center  items-center   md:w-[400px] md:h-[200px] w-[200px] h-[300px]'> Our client-focused solutions include custom web design, innovative web development, 
     UX/UI design, e-commerce solutions, and SEO optimization. We are dedicated to transforming
      your digital experience with designs that captivate and applications that perform.</p>
 
