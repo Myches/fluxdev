@@ -9,6 +9,8 @@ import './App.css'
 import './fonts.css';
 import { useEffect } from 'react';
 import { useDarkMode } from './Components/Context'
+import ScrollToTop from './Components/ScrollToTop'
+
 
 function App() {
   const { darkMode } = useDarkMode();
@@ -25,6 +27,7 @@ function App() {
     
     <div >
     <BrowserRouter >
+    <ScrollToTop />
     <Navbar />
     <Routes >
        <Route  path ="/" element={<Homepage />} />

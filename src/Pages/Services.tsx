@@ -27,7 +27,7 @@ export default function Services() {
     Request a quote or consultation time <br />
     <span className="md:text-[32px] text-[20px] leading-[22px] font-raleway">Get responds between 24hours</span>
   </p>
-  <p className="text-[18px] leading-[24px] font-raleway md:w-[70%] dark:text-darkGray">
+  <p className="text-[18px] leading-[24px] font-raleway md:w-[70%] px-8 dark:text-darkGray">
     We are aimed at helping companies across various industries transform their operations and enhance their digital presence.
   </p>
   <button className='w-[139px] h-[46px] bg-customBlue text-white rounded-lg font-montserrat'>Request Now</button>
@@ -100,8 +100,8 @@ export default function Services() {
 </div>
 
 <div className='lg:hidden block flex flex-col justify-center items-center py-12 font-raleway'>
-    <p className='md:text-[24px] md:leading-[36px] text-[14px] leading-[18px] dark:text-darkGray'>Have You <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Seen</span> our <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Products?</span></p>
-    <p className='md:text-[18px] text-[12px] md:leading-[27px] leadding-[10px] text-darkBlue'>What are you waiting for  <span> <button className='w-[139px] h-[46px] bg-customBlue text-white rounded-lg'>Get in Touch</button></span> with Us</p>
+<p className='md:text-[24px] md:leading-[36px] text-[14px] leading-[18px] font-semibold  dark:text-darkGray'>Have You <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Seen</span> our <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Products?</span></p>
+<p className='md:text-[18px] text-[16px] font-normal md:leading-[27px] leading-[10px] text-darkBlue dark:text-darkGray '>What are you waiting for  <span> <button className='md:w-[139px] md:h-[46px] w-[100px] h-[32px] text-[12px] md:text-[18px]  bg-customBlue font-inter font-medium text-white rounded-lg  hover:bg-bYellow hover:text-black dark:bg-bYellow'>Get in Touch</button></span> with Us</p>
 </div>
 
 

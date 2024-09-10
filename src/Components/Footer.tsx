@@ -23,7 +23,7 @@ export default function Footer() {
         <div className='w-full lg:h-[319px]  bg-deepBlue p-8 font-raleway'>
           
             <div className="lg:grid lg:grid-cols-4 grid grid-cols-1 gap-[30px]">
-                <div className='flex-col space-y-6  flex justify-center items-center'>
+                <div className='flex-col space-y-6  flex justify-center md:mx-4'>
                     <div className='flex space-x-4'>
                     <img src={sub} alt='Logo'  />
                     <p className='text-[16px] pt-4 text-gray-200 leading-[22px]'>Building products that meets user needs</p>
@@ -62,9 +62,9 @@ export default function Footer() {
                 </div>
                   
             </div>
-            <div className="flex flex-col  md:flex-row md:justify-around md:items-center justify-center items-center text-gray-200 md:text-[16px] text-[13px] font-medium leading-[30px] p-8 pr-12 pt-8 space-x-14">
-                    <p>&copy; {currentYear} PTS,Copyright and All Rights reserved</p>
+            <div className="flex flex-col  md:flex-row md:justify-center md:items-center justify-center items-center text-gray-200 md:text-[16px] text-[13px] font-medium leading-[30px] py-8  pt-12 space-x-14">
                     <p>Terms and Conditions</p>
+                    <p>&copy; {currentYear} PTS,Copyright and All Rights reserved</p>
 
                 </div> 
                 </div>

@@ -75,8 +75,8 @@ export default function Navbar() {
             </button>
 
             {isOpen && (
-                <div className="lg:hidden fixed right-0 top-[88px] w-[60%] h-[calc(100vh-88px)] bg-white border-t border-gray-200 shadow-md z-40 overflow-y-auto dark:bg-neutral-900">
-                    <div className='flex justify-center items-center space-x-4 p-4 border-t border-gray-200'>
+                <div className="lg:hidden fixed right-0 top-[88px] w-[60%] h-[calc(100vh-88px)] bg-white shadow-md z-40 overflow-y-auto dark:bg-neutral-900">
+                    <div className='flex justify-center items-center space-x-4 p-4 '>
                         {darkMode ? (
                             <button className='space-x-2 font-bold flex justify-center items-center' onClick={toggleDarkMode}>
                                 <img src={light} alt='dark-icon' className="mr-4" /> 
