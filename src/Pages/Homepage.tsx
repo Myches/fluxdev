@@ -190,7 +190,7 @@ export default function Homepage() {
   </p>
   <div className="mt-6 mx-auto   md:space-x-8 space-x-0 lg:flex-row flex flex-col lg:space-y-0 space-y-8 justify-center items-center ">
     
-   <Fade  direction="up" triggerOnce> <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[40px] w-[350px] md:h-[431px] w-[295px] h-[380px] p-6 dark:bg-neutral-900'>
+   <Fade  direction="up" triggerOnce> <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[40px] md:w-[350px] md:h-[431px] w-[295px] h-[380px] p-6 dark:bg-neutral-900'>
       <p className='font-bold leading-[30px] text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Elevate Your Online Presence
       </p>
@@ -211,7 +211,7 @@ export default function Homepage() {
    
     </Fade>
   
-    <Fade direction='up' triggerOnce ><div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] w-[350px] md:h-[431px] w-[295px] h-[380px]  p-6 dark:bg-neutral-900'>
+    <Fade direction='up' triggerOnce ><div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] md:w-[350px] md:h-[431px] w-[295px] h-[380px]  p-6 dark:bg-neutral-900'>
       <p className='font-semibold leading-[30px] text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Client-focused solutions.
       </p>
