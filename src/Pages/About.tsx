@@ -5,7 +5,7 @@ import image2 from '/images/Frame 184.png'
 import image3 from '/images/Frame 185.png'
 import image4 from '/images/Frame 188.png'
 import CountUp from "react-countup";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,33 +23,7 @@ export default function About() {
         
       ];
 
-      const settings1 = {
-        dots: false,
-            infinite: true,
-             slidesToShow: 5,
-            autoplay: true,
-            speed: 2000,
-            arrows:false,
-            autoplaySpeed: 2000,
-            cssEase: "linear",
-            slidesToScroll: 1,
-        responsive: [
-             
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      }
-
+   
     return (
 
       
