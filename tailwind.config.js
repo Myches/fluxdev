@@ -16,7 +16,8 @@ export default {
        'warning' : '#F4C790',
        'bYellow' : '#F7A400',
        'bgreen' : '#0FEFFD',
-       'darkGray':'#E7EBEF'
+       'darkGray':'#E7EBEF',
+        'bgBlue':'#4f4fa5'
       },
       fontFamily: {
         'euclid': ['Euclid Circular A', 'sans-serif'],

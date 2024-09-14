@@ -12,7 +12,7 @@ export default function Services() {
 
     return (
        
-        <div className="w-full h-full relative  dark:bg-black mt-16">
+        <div className="w-full h-full relative  dark:bg-neutral-800 mt-16">
                <Player
         src='https://lottie.host/9094bcd8-f710-4198-8e9f-95db1bd1e680/kEeFP2T1ay.json'
        className="player block md:hidden "
@@ -23,14 +23,14 @@ export default function Services() {
             <div className=' grid grid-cols-1 lg:grid lg:grid-cols-2 font-raleway flex justify-center py-6 space-y-12 md:space-y-0 text-darkBlue ' >
          
             <div className='flex flex-col  items-center text-center space-y-6 mx-auto dark:text-darkGray pt-16'>
-  <p className="md:text-[64px] font-bold md:leading-[73px] font-raleway text-[41px] leading-[42px] dark:text-darkGray">
+  <p className="md:text-[64px] md:px-0 px-4 font-bold md:leading-[73px] font-raleway text-[41px] leading-[42px] dark:text-darkGray">
     Request a quote or consultation time <br />
     <span className="md:text-[32px] text-[20px] leading-[22px] font-raleway">Get responds between 24hours</span>
   </p>
   <p className="text-[18px] leading-[24px] font-raleway md:w-[70%] px-8 dark:text-darkGray">
     We are aimed at helping companies across various industries transform their operations and enhance their digital presence.
   </p>
-  <button className='w-[139px] h-[46px] bg-customBlue text-white rounded-lg font-montserrat'>Request Now</button>
+  <button className='w-[139px] h-[46px] bg-customBlue hover:bg-opacity-70 text-white rounded-lg font-montserrat'>Request Now</button>
 </div>
 
    <div className=''>

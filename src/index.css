@@ -3,9 +3,3 @@
 @tailwind utilities;
 
 
-.heading-bar {
-  display: inline-block;
-  border-bottom: 4px solid black;
- 
-  
-}

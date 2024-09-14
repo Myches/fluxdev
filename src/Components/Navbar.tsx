@@ -67,7 +67,7 @@ export default function Navbar() {
                         <img src={dark} alt='dark-icon' className="mr-4" />
                     </button>
                 )}
-                <button className='w-[139px] h-[46px] bg-customBlue text-white font-raleway rounded-lg'>Contact Us</button>
+            <Link to="/Contact" >   <button className='w-[139px] h-[46px] bg-customBlue hover:bg-opacity-70 text-white font-raleway rounded-lg'>Contact Us</button></Link>
             </div>
 
             <button className="lg:hidden" onClick={toggleMenu}>
@@ -89,12 +89,12 @@ export default function Navbar() {
                             </button>
                         )}
                     </div> 
-                    <ul className='flex flex-col space-y-5 p-4 text-[18px] leading-[24px] dark:text-darkGray font-normal font-euclid'>
+                    <ul className='flex flex-col space-y-5 p-4 text-[18px] leading-[24px] dark:text-darkGray font-normal font-raleway'>
                         <Link to='/' onClick={toggleMenu}><li>Home</li></Link>
                         <Link to='/About' onClick={toggleMenu}><li>About us</li></Link>
                         <Link to='/Services' onClick={toggleMenu}><li>Services</li></Link>
                         <Link to='/Projects' onClick={toggleMenu}><li>Our Projects</li></Link>
-                        <li onClick={toggleMenu}>Contact</li>
+                        <Link to="/Contact" > <li onClick={toggleMenu}>Contact</li></Link>
                     </ul>
                     <button onClick={toggleMenu} className="pl-2">
                         <img src={close} alt="close toggle" style={{ filter: darkMode ? 'invert(1)' : 'none' }}/>

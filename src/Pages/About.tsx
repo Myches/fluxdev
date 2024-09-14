@@ -27,13 +27,8 @@ export default function About() {
     return (
 
       
-        <div className='w-full h-full relative dark:bg-black mt-12'>
-           
-          
-
-               
-              
-                    
+        <div className='w-full h-full relative dark:bg-neutral-800 mt-12'>    
+                      
         <div className=' grid grid-cols-1 lg:grid lg:grid-cols-2 font-raleway flex justify-center py-6 space-y-12 md:space-y-0 text-darkBlue p-6'>
 
             <div className='pt-16 space-y-6 md:w-[70%] w-full mx-auto dark:text-darkGray '>
