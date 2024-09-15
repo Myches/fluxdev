@@ -36,7 +36,7 @@ export default function Contact (){
         </div>
 
 
-        <div className="mt-8 px-12 w-full md:grid md:grid-cols-2 grid grid-cols-1 gap-y-8 font-raleway dark:text-white ">
+        <div className="mt-8 px-12 w-full lg:grid lg:grid-cols-2 grid grid-cols-1 md:gap-y-4 gap-y-8 font-raleway dark:text-white ">
            
         <form className="flex flex-col items-center md:h-[800px]" onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-col space-y-2 pb-6 w-full max-w-[500px] ">
@@ -92,19 +92,23 @@ export default function Contact (){
             <div className='bg-customBlue px-6 text-gray-200 shadow-xl flex flex-col  space-y-[20px] md:w-[350px] md:h-[331px]  p-6 dark:bg-neutral-950 border-none rounded-xl '>
             <p className='md:text-[24px] flex justify-center items-center md:leading-[36px] text-[14px] leading-[18px] font-semibold dark:text-darkGray'>
   <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Get</span>
-  <span className='mx-2'>in</span> 
+  <span className='mx-2 '>in</span> 
   <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>touch</span>
-  <span className='mx-2'>with us</span> 
+  <span className='mx-2 '>with us</span> 
 </p>
 
  
-     
+
       <p className='text-[16px] leading-[26px] font-raleway font-medium  text-center dark:text-white'>
       <span className='text-yellow-400  text-[16px] leading-[26px]'>Email</span> : userexample@gmail.com
       </p>
       <p className='text-[16px] leading-[26px] font-raleway font-medium  text-center dark:text-white'>
       <span className='text-yellow-400  text-[16px] leading-[26px]'>Mobile</span>   : 055545555545
       </p>
+      <p className='text-[16px] leading-[26px] font-raleway font-medium  text-center dark:text-white'>
+      <span className='text-yellow-400  text-[16px] leading-[26px]'>Location</span> : Lagos,Nigeria
+      </p>
+
       <div className='flex justify-center items-center space-x-2'>
                     <img src="/images/Frame (1).png" alt='instagramLogo'  />
                     <img src="/images/Frame (2).png" alt='xLogo'  />

@@ -36,7 +36,7 @@ export default function Footer() {
                     
                 </div>
 
-                <div className='md:flex md:justify-center md:items-center flex-col space-y-4 text-gray-200 '>
+                <div className='lg:flex lg:justify-center lg:items-center flex-col space-y-4 text-gray-200 '>
                     <p className='font-bold text-[14px] leading-[26px]'>Links</p>
                     <ul className=' flex flex-col justify-center  text-[14px] leading-[26px] font-normal'>
                     <li className='flex   items-center space-x-4'><img src={msg} alt="products logo "    /><p>Our Products</p></li>
@@ -44,7 +44,7 @@ export default function Footer() {
                         <li className='flex  items-center space-x-4'><img src={loc} alt="location Logo"    /><p>Our Location</p></li>
                     </ul>
                 </div>
-                <div className='md:flex md:justify-center md:items-center flex-col space-y-4 text-gray-200'>
+                <div className='lg:flex lg:justify-center lg:items-center flex-col space-y-4 text-gray-200'>
                 <p className='font-bold text-[14px] leading-[26px]'>Legal</p>
                     <ul className=' flex flex-col justify-center  text-[14px] leading-[26px] font-normal'>
                     <li className='flex   items-center space-x-4'><img src={news} alt="T&C Logo"    /><p>Terms and Conditions</p></li>
@@ -52,7 +52,7 @@ export default function Footer() {
                         <li className='flex   items-center space-x-4'><img src={legal} alt="reviews Logo"    /><p>Company Reviews</p></li>  
                     </ul>
                 </div>
-                <div className='md:flex md:justify-center md:items-center flex-col space-y-4 text-gray-200 '>
+                <div className='lg:flex lg:justify-center lg:items-center flex-col space-y-4 text-gray-200 '>
                 <p className='font-bold text-[14px] leading-[26px]'>Support</p>
                     <ul className=' flex flex-col justify-center  text-[14px] leading-[26px] space-y-2 font-normal'>
                     <li className='flex items-center space-x-6 '><img src={faq} alt="FAQ Logo"  className='w-[15px] h-[14px]' /><p>FAQs</p></li>
@@ -62,9 +62,9 @@ export default function Footer() {
                 </div>
                   
             </div>
-            <div className="flex flex-col  md:flex-row md:justify-center md:items-center justify-center items-center text-gray-200 md:text-[16px] text-[13px] font-medium leading-[30px] py-8  pt-12 space-x-14">
-                    <p>Terms and Conditions</p>
-                    <p>&copy; {currentYear} PTS,Copyright and All Rights reserved</p>
+            <div className="flex flex-col  md:flex-row md:justify-center md:items-center justify-center items-center text-gray-200 md:text-[16px] text-[13px] font-medium md:leading-[30px]  py-8  pt-12 space-x-14">
+                    <p className='leading-[20px]'>Terms and Conditions</p>
+                    <p className='text-center md:leading-[30px]  leading-tight'>&copy; {currentYear} PTS,Copyright and All Rights reserved</p>
 
                 </div> 
                 </div>

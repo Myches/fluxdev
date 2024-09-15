@@ -139,11 +139,11 @@ export default function Homepage() {
         
         <div className="w-[100%] h-[100%]  dark:bg-neutral-800">
   
-            <div className='lg:grid lg:grid-cols-2 grid grid-cols-1 mt-12 h-full'>
+            <div className='md:grid md:grid-cols-2 grid grid-cols-1 mt-12 h-full'>
            
 
                 <div  className='mt-12 '>
-                <p className='flex justify-center items-center  text-[24px] leading-[36px] mb-[-40px] font-raleway font-semibold mt-4 dark:text-darkGray block lg:hidden'>
+                <p className='flex justify-center items-center  text-[24px] leading-[36px] mb-[-40px] font-raleway font-semibold mt-4 dark:text-darkGray block md:hidden'>
     We Provide Digital Solutions.
 </p>
                 <Player
@@ -156,26 +156,26 @@ export default function Homepage() {
 
                 </div>
                 <div className='flex flex-col relative md:p-8 mt-[-30px] md:mt-[80px]'>
-                <p className='hidden md:block lg:text-[64px] lg:leading-[83.8px] text-[32px] leading-[32px] font-euclid font-semibold  dark:text-darkGray font-raleway '>We Provide <br /> Digital Solutions.</p>
-    <p className='lg:text-5 text-[16px] md:leading-[30px] leading-[23px] font-semibold font-raleway dark:text-darkGray  md:text-left text-center px-6 md:px-0'>
+                <p className='hidden md:block lg:text-[64px] lg:leading-[83.8px] text-[32px] leading-[32px] font-euclid font-semibold  dark:text-darkGray font-raleway md:text-center lg:text-start'>We Provide <br /> Digital Solutions.</p>
+    <p className='md:text-5 text-[16px] md:pt-4 pt-0 lg:pt-0 lg:leading-[30px] leading-[23px] font-semibold font-raleway dark:text-darkGray  md:text-left text-center px-6 md:px-0'>
         Let's create something extraordinary together - explore our services and start transforming your digital experience today
     </p>
     <div className=' flex justify-center lg:justify-start w-full md:mt-8 mt-2'>
     <Link to="/Contact" >   <button className='w-[147px] h-[46px] bg-purple-900 bg-opacity-80 font-inter font-medium text-white text-5 rounded-lg hover:bg-bYellow hover:text-black'>Get in Touch</button> </Link>
     </div>
-                <img src={bulb}  alt='banner'   className='hidden md:block absolute md:top-[65%] md:right-[30%] top-[-100px] right-[2%]'  />
+                <img src={bulb}  alt='banner'   className='hidden lg:block absolute md:top-[65%] md:right-[30%] top-[-100px] right-[2%]'  />
                 
                 </div>
                 
-        <img src={banner1}  alt='banner'   className='md:block hidden absolute top-[80px] right-0'  />
-        <img src={banner2}  alt='banner'   className='md:block hidden absolute top-[150px] right-0'  />
+        <img src={banner1}  alt='banner'   className='lg:block hidden absolute top-[80px] right-0'  />
+        <img src={banner2}  alt='banner'   className='lg:block hidden absolute top-[150px] right-0'  />
             </div>
          
       <div className=" pt-12">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div key={index} className="px-2">
-              <img src={logo.src} alt={logo.alt} style={logo.style} className="mx-auto h-[60px] w-[60px] md:w-[81px] md:h-[80px]" />
+              <img src={logo.src} alt={logo.alt} style={logo.style} className="mx-auto h-[60px] w-[60px] lg:w-[81px] lg:h-[80px]  w-[70px] h-[70px]" />
             </div>
           ))}
         </Slider>
@@ -187,7 +187,7 @@ export default function Homepage() {
   </p>
   <div className="mt-6 mx-auto   md:space-x-8 space-x-0 lg:flex-row flex flex-col lg:space-y-0 space-y-8 justify-center items-center ">
     
-   <Fade  direction="up" triggerOnce> <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[40px] md:w-[350px] md:h-[431px] w-[295px] h-[380px] p-6 dark:bg-neutral-900 border-none rounded-xl'>
+   <Fade  direction="up" triggerOnce> <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[40px] md:w-[450px] lg:w-[350px] md:h-[431px] w-[295px] h-[380px] p-6 dark:bg-neutral-900 border-none rounded-xl'>
       <p className='font-bold leading-[30px] text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Elevate Your Online Presence
       </p>
@@ -208,7 +208,7 @@ export default function Homepage() {
    
     </Fade>
   
-    <Fade direction='up' triggerOnce ><div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] md:w-[350px] md:h-[431px] w-[295px] h-[380px]  p-6 dark:bg-neutral-900 border-none rounded-xl'>
+    <Fade direction='up' triggerOnce ><div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] md:w-[450px] lg:w-[350px] md:h-[431px] w-[295px] h-[380px]  p-6 dark:bg-neutral-900 border-none rounded-xl'>
       <p className='font-semibold leading-[30px] text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Client-focused solutions.
       </p>
@@ -229,7 +229,7 @@ export default function Homepage() {
     </Fade> 
 
     <Fade   direction="up" triggerOnce>
-    <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] md:w-[350px] md:h-[431px] w-[300px] h-[380px] p-6 dark:bg-neutral-900 border-none rounded-xl '>
+    <div className='bg-graybg shadow-xl flex flex-col justify-center items-center space-y-[13px] md:w-[450px] lg:w-[350px] md:h-[431px] w-[300px] h-[380px] p-6 dark:bg-neutral-900 border-none rounded-xl '>
       <p className='font-semibold leading-[30px]  text-[20px] text-deepBlue dark:text-darkGray font-raleway text-center'>
         Transforming Your Digital Experience.
       </p>
@@ -299,7 +299,7 @@ export default function Homepage() {
                     </div>
                
 
-                    <div className='my-12 md:pb-8 pb-4 px-4 md:mx-[100px] mx-0 flex flex-col justify-center items-center md:items-end h-full font-raleway'>
+                    <div className='my-8 md:pb-8 pb-4 px-4 md:mx-6  lg:mx-[100px] mx-0 flex flex-col justify-center items-center md:items-end h-full font-raleway'>
   <p className='md:text-[48px] text-[36px] leading-[72px] text-[30px] text-darkBlue font-bold dark:text-white'>Our Team</p>
 
                     <p className=' text-[18px] leading-[24px] h-full flex  font-medium  w-full p-4  dark:text-darkGray  md:text-right font-raleway text-center'>our web development team is the cornerstone of our success, bringing together a diverse set of skills and a wealth of experience 
@@ -330,7 +330,7 @@ export default function Homepage() {
                  </div>
 
                 
-                <div className='lg:grid lg:grid-cols-2 grid grid-cols-1 w-full md:space-x-16 space-x-0  md:h-[850px] h-full md:space-y-0 md:p-12 p-4'>
+                <div className='lg:grid lg:grid-cols-2 grid grid-cols-1 w-full md:space-x-16 space-x-0  lg:h-[850px] h-full md:space-y-0 md:p-12 p-4'>
                     <div className='w-[100%] md:px-6 px-2'>
                 <p className='md:text-[48px] text-[21px] md:leading-[72px] leading-[32px] font-raleway font-bold text-darkBlue w-[70%] dark:text-white'>Frequently Asked Questions</p>
                 <Accordion className='space-y-6 my-8 dark:text-darkGray font-raleway' allowZeroExpanded={true}>
@@ -338,17 +338,17 @@ export default function Homepage() {
     <AccordionItem key={item.id}>
       <AccordionItemHeading className='bg-graybg dark:bg-neutral-900 p-4 border border-none rounded-lg'>
         <AccordionItemButton className='flex justify-between items-center'>
-          {/* Title Text */}
-          <span className="md:text-[20px] text-[16px] leading-[22px] text-deepBlue font-raleway font-normal dark:text-bYellow">
+         
+          <span className="lg:text-[20px] text-[16px] leading-[22px] text-deepBlue font-raleway font-normal dark:text-bYellow">
             {item.title}
           </span>
           
-          {/* Dropdown Icon with Fixed Size */}
+        
           <span className="dropdown-icon flex-shrink-0">
             <img
               src={dropdown}
               alt="dropdown logo"
-              className="w-6 h-6" // Adjust the size here
+              className="w-6 h-6"
               style={{ filter: darkMode ? 'invert(1)' : 'none' }}
             />
           </span>
@@ -393,7 +393,7 @@ export default function Homepage() {
 
 <div className='flex flex-col justify-center items-center font-raleway pb-8 px-2'>
     <p className='md:text-[24px] md:leading-[36px] text-[14px] leading-[18px] font-semibold  dark:text-darkGray'>Have You <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Seen</span> our <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Products?</span></p>
-    <p className='md:text-[18px] text-[16px] font-normal md:leading-[27px] leading-[10px] text-darkBlue dark:text-darkGray '>What are you waiting for  <span> <button className='md:w-[139px] md:h-[46px] w-[100px] h-[32px] text-[12px] md:text-[18px]  bg-customBlue font-inter font-medium text-white rounded-lg  hover:bg-bYellow hover:text-black dark:bg-bYellow'>Get in Touch</button></span> with Us</p>
+    <p className='md:text-[18px] text-[16px] font-normal md:leading-[27px] leading-[10px] text-darkBlue dark:text-darkGray '>What are you waiting for  <span><Link to="/Contact" >  <button className='md:w-[139px] md:h-[46px] w-[100px] h-[32px] text-[12px] md:text-[18px]  bg-customBlue font-inter font-medium text-white rounded-lg  hover:bg-bYellow hover:text-black dark:bg-bYellow'>Get in Touch</button></Link> </span> with Us</p>
 </div>
 
             </div>

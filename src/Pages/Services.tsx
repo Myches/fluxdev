@@ -2,7 +2,7 @@ import arrow1 from '/images/Frame 39519.png'
 import arrow2 from '/images/Frame 39519 (1).png'
 import { Player } from '@lottiefiles/react-lottie-player';
 import banner6 from '/images/Frame 39606.png'
-
+import { Link} from 'react-router-dom';
 
 
 
@@ -101,7 +101,7 @@ export default function Services() {
 
 <div className='lg:hidden block flex flex-col justify-center items-center py-12 font-raleway'>
 <p className='md:text-[24px] md:leading-[36px] text-[14px] leading-[18px] font-semibold  dark:text-darkGray'>Have You <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Seen</span> our <span className='text-yellow-400 font-bold md:text-[40px] text-[21px] leading-[60px]'>Products?</span></p>
-<p className='md:text-[18px] text-[16px] font-normal md:leading-[27px] leading-[10px] text-darkBlue dark:text-darkGray '>What are you waiting for  <span> <button className='md:w-[139px] md:h-[46px] w-[100px] h-[32px] text-[12px] md:text-[18px]  bg-customBlue font-inter font-medium text-white rounded-lg  hover:bg-bYellow hover:text-black dark:bg-bYellow'>Get in Touch</button></span> with Us</p>
+<p className='md:text-[18px] text-[16px] font-normal md:leading-[27px] leading-[10px] text-darkBlue dark:text-darkGray '>What are you waiting for  <span><Link to="/Contact" >  <button className='md:w-[139px] md:h-[46px] w-[100px] h-[32px] text-[12px] md:text-[18px]  bg-customBlue font-inter font-medium text-white rounded-lg  hover:bg-bYellow hover:text-black dark:bg-bYellow'>Get in Touch</button></Link> </span> with Us</p>
 </div>
 
 
